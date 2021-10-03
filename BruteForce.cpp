@@ -1,3 +1,4 @@
+#include<iostream>
 #include <vector>
 #include <algorithm>
 #include <concepts>
@@ -6,7 +7,7 @@
 #include <functional>
 #include <stack>
 #include <list>
-#include"BruteForce.h"
+//#include"BruteForce.h"
 
 // ============ Selection Sort - tipos ordenaveis ================= //
 /*

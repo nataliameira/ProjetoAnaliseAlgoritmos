@@ -1,5 +1,6 @@
 #include<list>
 #include<vector>
+#include<iostream>
 
 #include"GraphSearch.h"
 #include"Utils.h"
@@ -54,17 +55,17 @@ std::list<int> bfs(int s, std::vector<std::vector<int>> G) {
 
 		printSequenceSequence(frontier);
 
-		std::list<int> path(frontier.front());
+		std::list<int> path(frontier.front());			//tira do inicio
 		frontier.pop_front();
 
 		if (is_goal(path.back())) {
 			return path;
 		}
 		else {
-			for (auto e : get_neighbors(path.back(), G)) {
-				std::list<int> new_path(path);
+			for (auto e : get_neighbors(path.back(), G)) {		// verifica se tem vizinhos
+				std::list<int> new_path(path);					// cria noto caminho para cada vizinho
 				new_path.push_back(e);
-				frontier.push_back(new_path);
+				frontier.push_back(new_path);			// insere no final
 			}
 		}
 	}

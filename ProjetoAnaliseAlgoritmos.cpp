@@ -1,21 +1,17 @@
 // ProjetoAnaliseAlgoritmos.cpp : Este arquivo contém a função 'main'. A execução do programa começa e termina ali.
-//
 
 
 #include <vector>
 #include <iostream>
 #include <list>
 
-#include "Utils.h"
-#include "Utils.cpp"
-#include "BruteForce.h"
-#include "BruteForce.cpp"
+#include"Utils.h"
+#include"BruteForce.h"
 #include "Students.cpp"
-#include "GraphSearch.h"
-#include "GraphSearch.cpp"
-//#include "PermSetGenerators.h"
+//#include"GraphSearch.h"
+#include"PermSetGenerators.h"
 //#include "ConvexHull.h"
-//#include "TopologicalSorting.h"
+//#include "TopologicalSorting.h" 
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -58,7 +54,8 @@ int main() {
 
 //=====================  GraphSearch  ====================//
 
-int main{
+/* 
+int main() {
 	// representar como um vector de vectors
 	std::vector<std::vector<int>> G({			// G é grafo e em cada linha tem os nós vizinhos daquele nó
 
@@ -76,8 +73,32 @@ int main{
 	std::list<int> pathdfs = dfs(0, G);		// os nós como listas de inteiros, pathdfs = caminho de busca de profundidade
 											// dfs vai começa no nó 0 e explora o grafo completo
 	printSequence(pathdfs);
+
+	//std::list<int> pathbfs = bfs(0, G);		
+
+	//printSequence(pathbfs);
+}
+*/
+
+
+//======= PermSetGen - gerador de permutações   ========//
+
+int main() {
+
+	//permgen(4);				// permutações
+
+	//binsetgen(4);				// Binário
+
+	//subsetgen(4);				// valores do binario, subconjuntos de itens
+
+	/*std::list<std::list<int>> sets = reflectedGrayCode(4);	// reflectedGrayCode
+
+	printSequenceSequence(sets);
+	*/
 }
 
+
+//======= PermSetGen - gerador de permutações   ========//
 
 /*
 int main()
