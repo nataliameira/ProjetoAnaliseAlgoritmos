@@ -6,12 +6,13 @@
 #include <list>
 
 #include"Utils.h"
-#include"BruteForce.h"
-#include "Students.cpp"
+//#include"BruteForce.h"
+//#include "Students.cpp"
 //#include"GraphSearch.h"
 #include"PermSetGenerators.h"
-//#include "ConvexHull.h"
 //#include "TopologicalSorting.h" 
+//#include "ConvexHull.h"
+
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -83,6 +84,7 @@ int main() {
 
 //======= PermSetGen - gerador de permutações   ========//
 
+
 int main() {
 
 	//permgen(4);				// permutações
@@ -91,26 +93,27 @@ int main() {
 
 	//subsetgen(4);				// valores do binario, subconjuntos de itens
 
-	/*std::list<std::list<int>> sets = reflectedGrayCode(4);	// reflectedGrayCode
+	std::list<std::list<int>> sets = reflectedGrayCode(3);	// reflectedGrayCode
 
 	printSequenceSequence(sets);
-	*/
+	
 }
 
 
-//======= PermSetGen - gerador de permutações   ========//
 
-/*
-int main()
-{
-	std::vector<std::vector<int>> G({
-		{0,1,0,0,1},
-		{0,0,0,0,0},
-		{1,0,0,0,0},
-		{1,0,0,0,0},
-		{0,1,0,0,0} });
+//======= Topological Sorting  ========//
 
-	std::list<int> sorted_nodes = topologicalSorting(G);
+/* 
+int main(){ 
+
+	std::vector<std::vector<int>> G({		// grafo G, poderia ser float ou double, p generalizar ou fazer com que as arestas tenham peso/custo
+		{0,0,1,0,0},
+		{0,0,1,0,0},
+		{0,0,0,1,1},
+		{0,0,0,0,1},
+		{0,0,0,0,0} });
+
+	std::list<int> sorted_nodes = topological_sorting(G);
 
 	printSequence(sorted_nodes);
 

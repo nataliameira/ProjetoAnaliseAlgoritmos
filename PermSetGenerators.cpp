@@ -9,32 +9,32 @@
 // pode ser utilizado para o problema do caixeiro viajante: basta avaliar todos os caminhos gerados e escolher o menor
 
 
-void permgen(int n) {									// parâmetros do método: n numero para realizar as permutações
+void permgen(int n) {										// parâmetros do método: n numero para realizar as permutações
 
-	std::list<int> start({});							// implementar o caminho da fronteira, lista com nó inicial s												
-	std::list<std::list<int>> frontier({ start });		// implementar a fronteira
+	std::list<int> start({});								// implementar o caminho da fronteira, lista com nó inicial s												
+	std::list<std::list<int>> frontier({ start });			// implementar a fronteira
 
-	while (!frontier.empty()) {							// enquanto a fronteira não estiver vazio
+	while (!frontier.empty()) {								// enquanto a fronteira não estiver vazio
 
-		//printSequenceSequence(frontier);				// Utils.h, lista de listas, 2 loops
+		//printSequenceSequence(frontier);					// Utils.h, lista de listas, 2 loops
 
-		std::list<int> path(frontier.back());			// faz uma cópia do ultimo caminho da fronteira
-		frontier.pop_back();							// agr retira o ultimo caminho sem retornar o elemento (pop_back)
+		std::list<int> path(frontier.back());				// faz uma cópia do ultimo caminho da fronteira
+		frontier.pop_back();								// agr retira o ultimo caminho sem retornar o elemento (pop_back)
 		
-		if (path.size() == n) {							// agora, o objetivo é alcançado qdo atingimos n permutações, ou seja, se tem tamanho n, chegou ao fim
+		if (path.size() == n) {								// agora, o objetivo é alcançado qdo atingimos n permutações, ou seja, se tem tamanho n, chegou ao fim
 			printSequence(path);
 		}
-		else {											// fornecer a lista dos elementos que faltam na permutação
-			std::vector<int> todo({});					// elementos que tenho para acessar
-
-			for (int i = n - 1; i >= 0; i--)			// 
+		else {												// fornecer a lista dos elementos que faltam na permutação
+			std::vector<int> todo({});						// elementos que tenho para acessar
+				
+			for (int i = n - 1; i >= 0; i--)				// 
 			{
 				bool contains = (std::find(path.begin(), path.end(), i) != path.end()); // find: verifica se cada elemento já está na lista
 				// nesse caso, end() não aponta para o último elemento da lista e sim para o final da lista
 				// compara com path.end(), se for diferente, o elemento esta dentro da lista
 				
 				if (!contains) {						
-					todo.push_back(i);					// add na lista 
+					todo.push_back(i);						// add na lista 
 				}
 			}
 
@@ -51,9 +51,9 @@ void permgen(int n) {									// parâmetros do método: n numero para realizar as
 // por exemplo, para o problema da mochila
 
 
-void binsetgen(int n) {									// não precisa mais restringir					
+void binsetgen(int n) {										// não precisa mais restringir					
 
-	std::list<int> start({});							// podemos começar com vazio
+	std::list<int> start({});								// podemos começar com vazio
 	std::list<std::list<int>> frontier({ start });
 
 	while (!frontier.empty()) {
@@ -61,13 +61,13 @@ void binsetgen(int n) {									// não precisa mais restringir
 		std::list<int> path(frontier.back());
 		frontier.pop_back();
 
-		if (path.size() == n) {							// critério de parada: n
+		if (path.size() == n) {								// critério de parada: n
 			printSequence(path);
 		}
 		else {
-			std::vector<int> todo({ 1,0 });				// sempre insere 0 ou 1
+			std::vector<int> todo({ 1,0 });					// sempre insere 0 ou 1
 
-			for (auto e : todo) {						// só para na profundidade m
+			for (auto e : todo) {							// só para na profundidade m
 				std::list<int> new_path(path);
 				new_path.push_back(e);
 				frontier.push_back(new_path);
@@ -113,12 +113,17 @@ void subsetgen(int n) {
 
 //=====================  Permutações- Binary Reflected Gray Code ====================//
 
-std::list<std::list<int>> reflectedGrayCode(int n) {
-	std::list<std::list<int>> power_set;
+// usou lista porque precisa add o elemento na frente 
+// no vector precisaria empurrar todo mundo
 
+std::list<std::list<int>> reflectedGrayCode(int n) {		// lista
+	std::list<std::list<int>> power_set;					// poderia ser vector
+						
 	if (n == 1) {
-		power_set.push_back({ 0 });							
-		power_set.push_back({ 1 });
+		power_set.push_back({ 0 });							// vazio				
+		power_set.push_back({ 1 });		
+		// proprio elemento
+		//return power_set;
 	}
 	else {
 		std::list<std::list<int>> L1 = reflectedGrayCode(n - 1);
