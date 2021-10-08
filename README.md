@@ -15,5 +15,5 @@ Para acessar o repositório do professor clique [aqui](https://github.com/rcpsil
 * ```GraphSearch.cpp``` - contém os algoritmos de força bruta para grafos: **busca em profundidade (dfs)** e **busca em largura (bfs)** *(professor)*.
 * ```PermSetGenerators.cpp``` - contém os algoritmos de permutação: **permutação à partir do busca em profundidade**, **permutação de binários**, **permutação** e **Binary Reflected Gray Code** *(professor)*.
 * ```TopologicalSorting.cpp``` - contém o algoritmo de **ordenação topológica** *(professor)*.
-* * ```BinarySearchTree.cpp``` - contém o algoritmo de **Binary Search Tree** *(professor)*.
+* ```BinarySearchTree.cpp``` - contém o algoritmo de **Binary Search Tree** *(professor)*.
 
