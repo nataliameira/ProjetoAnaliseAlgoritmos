@@ -9,8 +9,9 @@
 //#include"BruteForce.h"
 //#include "Students.cpp"
 //#include"GraphSearch.h"
-#include"PermSetGenerators.h"
+//#include"PermSetGenerators.h"
 //#include "TopologicalSorting.h" 
+#include"BinarySearchTree.h"
 //#include "ConvexHull.h"
 
 
@@ -85,7 +86,7 @@ int main() {
 //======= PermSetGen - gerador de permutações   ========//
 
 
-int main() {
+//int main() {
 
 	//permgen(4);				// permutações
 
@@ -93,11 +94,11 @@ int main() {
 
 	//subsetgen(4);				// valores do binario, subconjuntos de itens
 
-	std::list<std::list<int>> sets = reflectedGrayCode(3);	// reflectedGrayCode
+	//std::list<std::list<int>> sets = reflectedGrayCode(3);	// reflectedGrayCode
 
-	printSequenceSequence(sets);
+	//printSequenceSequence(sets);
 	
-}
+//}
 
 
 
@@ -119,3 +120,27 @@ int main(){
 
 }
 */
+
+//======= Binary Search Tree  ========//
+
+int main() {
+
+	BinarySearchTree<int> bt;
+
+	std::cout << (bt.insert(8) == InsertionInfo::Inserted ? "Inserted" : "AlreadyIn") << std::endl;		// verificar se o valor foi inserido
+	std::cout << (bt.insert(1) == InsertionInfo::Inserted ? "Inserted" : "AlreadyIn") << std::endl;
+	std::cout << (bt.insert(5) == InsertionInfo::Inserted ? "Inserted" : "AlreadyIn") << std::endl;
+	std::cout << (bt.insert(10) == InsertionInfo::Inserted ? "Inserted" : "AlreadyIn") << std::endl;
+	std::cout << (bt.insert(5) == InsertionInfo::Inserted ? "Inserted" : "AlreadyIn") << std::endl;
+	std::cout << (bt.insert(3) == InsertionInfo::Inserted ? "Inserted" : "AlreadyIn") << std::endl;
+	std::cout << (bt.insert(4) == InsertionInfo::Inserted ? "Inserted" : "AlreadyIn") << std::endl;
+	std::cout << (bt.insert(1) == InsertionInfo::Inserted ? "Inserted" : "AlreadyIn") << std::endl;
+
+	bt.print();							// método print p o objeto bt
+
+	std::cout << (bt.search(3) == SearchInfo::Found ? "Found" : "NotFound") << std::endl;		// buscando valores
+	std::cout << (bt.search(100) == SearchInfo::Found ? "Found" : "NotFound") << std::endl;
+}
+
+
+
