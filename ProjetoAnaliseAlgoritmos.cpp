@@ -11,8 +11,10 @@
 //#include"GraphSearch.h"
 //#include"PermSetGenerators.h"
 //#include "TopologicalSorting.h" 
-#include"BinarySearchTree.h"
+//#include"BinarySearchTree.h"
+//#include"JohnsonTrotter.cpp"
 //#include "ConvexHull.h"
+#include"InsertionSort.h"
 
 
 //===================== Brute Force  - Selection Sort  =================//
@@ -123,6 +125,7 @@ int main(){
 
 //======= Binary Search Tree  ========//
 
+/*
 int main() {
 
 	BinarySearchTree<int> bt;
@@ -141,6 +144,38 @@ int main() {
 	std::cout << (bt.search(3) == SearchInfo::Found ? "Found" : "NotFound") << std::endl;		// buscando valores
 	std::cout << (bt.search(100) == SearchInfo::Found ? "Found" : "NotFound") << std::endl;
 }
+*/
+
+//======= Johnson Trotter  ========//
+/* 
+main(){
+
+	std::vector<std::vector<int>> permutations = johnsonTrotter(5);
+
+	for (auto permutation : permutations) {
+		printSequence(permutation);
+	}
+
+	return 0;
+}
+*/
+
+//===================== Insertion Sort  =================//
+
+
+int main() {
+
+	std::vector<int> v = { { 8,7,1,4,2 } };			
+
+	printSequence(v);
+
+	insertion_sort(v);
+
+	printSequence(v);
+}
+
+
+
 
 
 
