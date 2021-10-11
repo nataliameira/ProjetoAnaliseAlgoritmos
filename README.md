@@ -22,3 +22,5 @@ Para acessar o repositório do professor acesse [aqui](https://github.com/rcpsil
 * ```CommonElements.cpp``` - contém o  algoritmo que encontra todos os elementos comuns em duas listas, proposto no livro didático *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
 * ```EuclideanAlgorithmGCD.cpp``` - calcula o máximo divisor comum de *m* e *n,*  **gcd(m,n)** pelo algoritmo de Euclides, proposto no livro didático (p.8) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
 * ```Dmin.cpp``` - encontra a distância entre os dois elementos mais próximos em uum array de números, proposto no livro didático (p.18) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
+
+
