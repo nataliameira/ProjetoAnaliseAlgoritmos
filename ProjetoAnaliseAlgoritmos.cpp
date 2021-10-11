@@ -14,7 +14,11 @@
 //#include"BinarySearchTree.h"
 //#include"JohnsonTrotter.cpp"
 //#include "ConvexHull.h"
-#include"InsertionSort.h"
+//#include"InsertionSort.h"
+
+//#include"CommonElements.h"
+//#include"EuclideanAlgorithmGCD.h"
+#include"Dmin.h"
 
 
 //===================== Brute Force  - Selection Sort  =================//
@@ -162,7 +166,7 @@ main(){
 
 //===================== Insertion Sort  =================//
 
-
+/*
 int main() {
 
 	std::vector<int> v = { { 8,7,1,4,2 } };			
@@ -173,7 +177,47 @@ int main() {
 
 	printSequence(v);
 }
+*/
 
+//===================== Common Elements  =================//
+
+/* 
+int main() {
+
+	std::vector<int> A = { { 2,5,5,5 } };
+	std::vector<int> B = { { 2,2,3,5,5,7 } };
+
+	printSequence(A);
+	printSequence(B);
+
+	common_elements(A, B);
+
+}
+*/
+
+//===================== Euclidean Algorithm GCD  =================//
+
+/* 
+int main() {
+
+	int n = 400;
+	int m = 25;
+
+	gcd(m, n);
+}
+*/
+
+//===================== Dmin ===============//
+
+int main() {
+
+	std::vector<int> v = { { 10, 15, 32, 44, 51 } };
+
+	printSequence(v);
+
+	dist_min(v);
+
+}
 
 
 
