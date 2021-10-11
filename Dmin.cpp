@@ -4,7 +4,7 @@
 #include "Dmin.h"
 
 /*
-Encontra a distância entre os dois elementos mais próximos em uma matriz de números.
+Encontra a distância entre os dois elementos mais próximos em um array de números.
 	Input: A[0..n-1]
 	Output: a menor distância entre  dois elementos
 

@@ -14,12 +14,12 @@
 //#include"BinarySearchTree.h"
 //#include"JohnsonTrotter.cpp"
 //#include "ConvexHull.h"
-//#include"InsertionSort.h"
 
+//#include"InsertionSort.h"
 //#include"CommonElements.h"
 //#include"EuclideanAlgorithmGCD.h"
-#include"Dmin.h"
-
+//#include"Dmin.h"
+#include"Fatorial.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -209,6 +209,7 @@ int main() {
 
 //===================== Dmin ===============//
 
+/* 
 int main() {
 
 	std::vector<int> v = { { 10, 15, 32, 44, 51 } };
@@ -216,6 +217,18 @@ int main() {
 	printSequence(v);
 
 	dist_min(v);
+
+}
+*/
+
+//===================== Fatorial ===============//
+
+
+int main() {
+
+	int n = 5;
+
+	fatorial(n);
 
 }
 
