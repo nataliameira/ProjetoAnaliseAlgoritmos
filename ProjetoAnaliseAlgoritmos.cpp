@@ -21,7 +21,8 @@
 //#include"Dmin.h"
 //include"Fatorial.h"
 //#include"Fibonacci.h"
-#include"SequentialSearch2.h"
+//#include"SequentialSearch2.h"
+#include"BruteForceStringMatch.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -278,7 +279,7 @@ int main() {
 	
 //======= SequentialSearch2 ========//
 
-
+/* 
 int main() {
 
 	std::vector<int> v = { { 8, 14, 21, 34, 41, 57, 68, 72, 76 } };
@@ -290,8 +291,25 @@ int main() {
 	seq_search2(v);
 
 }
+*/
+
+//======= Brute Force String Match ========//
 
 
+int main() {
+
+	std::vector<std::string> texto{ {"algoritmos", "busca", "exaustiva", "forca", "bruta","diminuir", "conquistar", "vector", "template"} };
+
+	std::vector<std::string> padrao{ {"forca"} };
+
+	printSequence(texto);
+	std::cout << std::endl;
+	printSequence(padrao);
+	std::cout << std::endl;
+
+	string_match(texto, padrao);
+
+}
 
 
 

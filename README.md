@@ -25,4 +25,4 @@ Para acessar o repositório do professor acesse [aqui](https://github.com/rcpsil
 * ```Fatorial.cpp``` - encontra o fatorial de um número **n** recursivamente, proposto no livro didático (p.70) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/Fatorial.cpp)*.
 * ```Fibonacci.cpp``` -  encontra recursivamente o enésimo numero da sequencia de Fibonacci, proposto no livro didático (p.81) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/Fibonacci.cpp)*.
 * ```SequentialSearch2.cpp``` -  implementa a pesquisa sequencial com uma chave de pesquisa como um sentinela, algoritmo **Sequential Search 2**, proposto no livro didático (p.104) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/SequentialSearch2.cpp)*.
-
+* ```BruteForceStringMatch.cpp``` -  Implementa correspondência de string de força bruta, algoritmo **BruteForceStringMatch**, proposto no livro didático (p.105) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
