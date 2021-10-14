@@ -19,7 +19,9 @@
 //#include"CommonElements.h"
 //#include"EuclideanAlgorithmGCD.h"
 //#include"Dmin.h"
-#include"Fatorial.h"
+//include"Fatorial.h"
+//#include"Fibonacci.h"
+#include"SequentialSearch2.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -223,14 +225,73 @@ int main() {
 
 //===================== Fatorial ===============//
 
-
+/* 
 int main() {
 
 	int n = 5;
 
-	fatorial(n);
+	//fatorial(n);
+
+	std::cout << fatorial(n) << std::endl;
 
 }
+*/
+
+//===================== Fibonacci ===============//
+
+/* 
+int main() {
+
+	int n = 11;
+
+	std::cout << fibonacci(n) << std::endl;
+
+}
+*/
+
+/* 
+//======= Simulado - Binary Search Tree  ========//
+
+
+int main() {
+
+	BinarySearchTree<int> bt;
+
+	bt.insert(5); 		// verificar se o valor foi inserido
+	bt.insert(3);
+	bt.insert(7);
+	bt.insert(1);
+	bt.insert(4);
+	bt.insert(6);
+	bt.insert(10);
+
+	bt.preorder();
+	std::cout << std::endl;
+
+	bt.inorder();
+	std::cout << std::endl;
+
+	bt.postorder();
+	std::cout << std::endl;
+}
+*/
+	
+//======= SequentialSearch2 ========//
+
+
+int main() {
+
+	std::vector<int> v = { { 8, 14, 21, 34, 41, 57, 68, 72, 76 } };
+
+	printSequence(v);
+
+	int k = 41;
+
+	seq_search2(v);
+
+}
+
+
 
 
 

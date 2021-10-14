@@ -22,6 +22,7 @@ Para acessar o repositório do professor acesse [aqui](https://github.com/rcpsil
 * ```CommonElements.cpp``` - contém o  algoritmo que encontra todos os elementos comuns em duas listas, proposto no livro didático (p.8) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/CommonElements.cpp)*.
 * ```EuclideanAlgorithmGCD.cpp``` - calcula o máximo divisor comum de *m* e *n,*  **gcd(m,n)** pelo algoritmo de Euclides, proposto no livro didático (p.4) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/EuclideanAlgorithmGCD.cpp)*.
 * ```Dmin.cpp``` - encontra a distância entre os dois elementos mais próximos em um array de números, proposto no livro didático (p.18) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/Dmin.cpp)*.
-* ```Fatorial.cpp``` - encontra o fatorial de um número **n** recursivamente, proposto no livro didático (p.70) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/Dmin.cpp)*.
-
+* ```Fatorial.cpp``` - encontra o fatorial de um número **n** recursivamente, proposto no livro didático (p.70) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/Fatorial.cpp)*.
+* ```Fibonacci.cpp``` -  encontra recursivamente o enésimo numero da sequencia de Fibonacci, proposto no livro didático (p.81) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
+* ```SequentialSearch2.cpp``` -  implementa a pesquisa sequencial com uma chave de pesquisa como um sentinela, algoritmo **Sequential Search 2**, proposto no livro didático (p.104) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
 

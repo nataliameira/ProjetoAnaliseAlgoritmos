@@ -25,7 +25,7 @@ int fatorial(int n){
 		
 	}
 
-	std::cout << f << std::endl;
+	//std::cout << f << std::endl;
 	return f;
 }
 

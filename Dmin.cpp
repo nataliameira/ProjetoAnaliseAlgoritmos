@@ -1,6 +1,7 @@
 #include<vector>
 #include<iostream>
 #include<concepts>
+#include<math.h>
 #include "Dmin.h"
 
 /*
@@ -20,7 +21,7 @@ template <typename T>
 
 void dist_min(std::vector<T>& v){
 	
-	int dmin = 999;
+	double dmin = INFINITY;
 
 	for (size_t i = 0; i < v.size(); i++) {
 		for (size_t j = 0; j < v.size(); j++) {

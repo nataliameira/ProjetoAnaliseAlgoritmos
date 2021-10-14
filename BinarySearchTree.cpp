@@ -1,6 +1,6 @@
 #include <concepts>				// totalmente ordenavel
 #include <iostream>
-#include "BinarySearchTree.h"
+//#include "BinarySearchTree.h"
 
 template<std::totally_ordered T>				//definido para qualquer tipo totalmente ordenavel
 class BinarySearchTree
