@@ -23,7 +23,8 @@
 //#include"Fibonacci.h"
 //#include"SequentialSearch2.h"
 //#include"BruteForceStringMatch.h"
-#include"ClosestPairProblem.h"
+//#include"ClosestPairProblem.h"
+#include"BinarySearch.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -314,7 +315,7 @@ int main() {
 */
 
 //======= Brute Force Closest Pair ========//
-
+/* 
 int main() {
 
 
@@ -325,6 +326,19 @@ int main() {
 	closest_pair(x, y);
 
 }
+*/
 
+//======= Binary Search ========//
 
+int main() {
 
+	std::vector<int> v{ {8, 7, 3, 15, 11, 22, 25} };
+
+	printSequence(v);
+
+	int k = 11;
+
+	binary_search(k, v);
+
+	printSequence(v);
+}
