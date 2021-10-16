@@ -22,7 +22,8 @@
 //include"Fatorial.h"
 //#include"Fibonacci.h"
 //#include"SequentialSearch2.h"
-#include"BruteForceStringMatch.h"
+//#include"BruteForceStringMatch.h"
+#include"ClosestPairProblem.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -226,7 +227,7 @@ int main() {
 
 //===================== Fatorial ===============//
 
-/* 
+/*
 int main() {
 
 	int n = 5;
@@ -240,7 +241,7 @@ int main() {
 
 //===================== Fibonacci ===============//
 
-/* 
+/*
 int main() {
 
 	int n = 11;
@@ -250,7 +251,7 @@ int main() {
 }
 */
 
-/* 
+/*
 //======= Simulado - Binary Search Tree  ========//
 
 
@@ -276,10 +277,10 @@ int main() {
 	std::cout << std::endl;
 }
 */
-	
+
 //======= SequentialSearch2 ========//
 
-/* 
+/*
 int main() {
 
 	std::vector<int> v = { { 8, 14, 21, 34, 41, 57, 68, 72, 76 } };
@@ -295,7 +296,7 @@ int main() {
 
 //======= Brute Force String Match ========//
 
-
+/*
 int main() {
 
 	std::vector<std::string> texto{ {"algoritmos", "busca", "exaustiva", "forca", "bruta","diminuir", "conquistar", "vector", "template"} };
@@ -310,8 +311,20 @@ int main() {
 	string_match(texto, padrao);
 
 }
+*/
+
+//======= Brute Force Closest Pair ========//
+
+int main() {
 
 
+	std::vector<int> x({ 2, 4, 8, 9, 11, 27, 44}), y({ 3, 5, 14, 18, 22, 34, 55 });
+
+	//printSequenceSequence(x, y);
+
+	closest_pair(x, y);
+
+}
 
 
 
