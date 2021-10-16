@@ -1,4 +1,4 @@
-#include"ClosestPairProblem.h"
+//#include"ClosestPairProblem.h"
 #include<vector>
 #include <iostream>
 #include <algorithm>
@@ -6,6 +6,7 @@
 
 /*
 Brute Force Closest Pair Problema
+
 
 Encontra  a distância entre dois pontos mais próximos no plano por força bruta
 		Input: uma lista P de n(n >=2) pontos p1(x1,y1), ..., pn(xn, yn)
