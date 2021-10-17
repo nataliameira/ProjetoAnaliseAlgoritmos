@@ -24,7 +24,9 @@
 //#include"SequentialSearch2.h"
 //#include"BruteForceStringMatch.h"
 //#include"ClosestPairProblem.h"
-#include"BinarySearch.h"
+//#include"BinarySearch.h"
+//#include"MatrixMultiplication.h"
+#include"MergeSort.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -330,6 +332,7 @@ int main() {
 
 //======= Binary Search ========//
 
+/* 
 int main() {
 
 	std::vector<int> v{ {8, 7, 3, 15, 11, 22, 25} };
@@ -342,3 +345,29 @@ int main() {
 
 	printSequence(v);
 }
+*/
+
+//======= Matrix Multiplication ========//
+/* 
+int main() {
+
+	std::vector<std::vector<int>> A({ {7, 5}, {16, 8} });
+	std::vector<std::vector<int>> B({ {1, 0}, {0, 1} });
+
+	std::vector<std::vector<int>> C = matrix_multiplication(A, B);
+	printSequenceSequence(C);
+
+}
+*/
+
+//======= Merge Sort ========//
+
+int main() {
+
+	std::vector<int> A{ {8, 3, 2, 9, 7, 1, 5, 4} };
+
+	merge_sort(A);
+
+	printSequence(A);
+}
+
