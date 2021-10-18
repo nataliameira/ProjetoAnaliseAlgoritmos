@@ -6,6 +6,8 @@ Este repositório contém os exercícios referentes a disciplina **PCC104 - Proj
 
 Para acessar o repositório do professor acesse [aqui](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)
 
+Livro Didático: *Levitin, Anany. **Introduction to the design & analysis of algorithms**. 3rd ed. Pearson, 2012.*
+
 ### Sumário
 
 * ```ProjetoAnaliseAlgoritmos.cpp``` - contém a implementação principal *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
