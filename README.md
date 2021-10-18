@@ -6,7 +6,8 @@ Este repositório contém os exercícios referentes a disciplina **PCC104 - Proj
 
 Para acessar o repositório do professor acesse [aqui](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)
 
-Livro Didático: *Levitin, Anany. **Introduction to the design & analysis of algorithms**. 3rd ed. Pearson, 2012.*
+
+<ins>Livro Didático</ins> : *Levitin, Anany. **Introduction to the design & analysis of algorithms**. 3rd ed. Pearson, 2012.*
 
 ### Sumário
 
@@ -31,4 +32,4 @@ Livro Didático: *Levitin, Anany. **Introduction to the design & analysis of alg
 * ```ClosestPairProblem.cpp``` -  encontra  a distância entre dois pontos mais próximos no plano por força bruta, algoritmo **Brute Force Closest Pair**, proposto no livro didático (p.109) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/ClosestPairProblem.cpp)*.
 * ```BinarySearch.cpp``` -  implementa uma busca binária não-recursiva, algoritmo **Binary Search**, proposto no livro didático (p.151) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/BinarySearch.cpp)*.
 * ```MatrixMultiplication.cpp``` -  multiplica duas matrizes quadradas de ordem n, algoritmo **Matrix Multiplication**, proposto no livro didático (p.64), baseado em *[daher13](https://github.com/daher13/design-analysis-algorithms/blob/main/bruteForce/matrixMultiplication.cpp)*.
-* ```MergeSort.cpp``` -  classifica a matriz A [0..n - 1] por mesclagem recursiva, algoritmo **Merge Sort**, proposto no livro didático (p.172), *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/MergeSort.cpp)*.
+* ```MergeSort.cpp``` -  classifica a matriz A [0..n - 1] por mesclagem recursiva, algoritmo **Merge Sort**, proposto no livro didático (p.172) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/MergeSort.cpp)*.
