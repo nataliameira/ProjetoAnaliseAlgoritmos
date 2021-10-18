@@ -2,7 +2,10 @@
 #include<concepts>
 #include<vector>
 #include<algorithm>
+#include<cmath>
+#include<math.h>
 #include"MergeSort.h"
+#include"Utils.h"
 
 /*
 Mergesort (A [0..n - 1])
@@ -44,28 +47,34 @@ void merge(std::vector<int> B, std::vector<int> C, std::vector<int>& A) {
 	int i = 0, j = 0, k = 0;
 	int p = B.size();
 	int q = C.size();
+	//A[0] = A[k];
+	//A.size() == p + q - 1;
 
 	while (i < p && j < q) {
 
 		if (B[i] <= C[j]) {
 			A[k] = B[i];
-			i += 1;
+			i++;
 		}
 
 		else {
 			A[k] = C[j];
-			j += 1;
+			j++;
 		}
 
 		k++;
 	}
 
-	if (i == p) {
-		A.push_back(C[j]);
+	if (i == p) {		// percorreu o subvetor completamente
+		for (; j < q; k++, j++) {
+			A[k] = C[j];
+		}
 	}
 
 	else {
-		A.push_back(B[i]);
+		for (; i < p; k++, i++) {
+			A[k] = B[i];
+		}
 	}
 }
 
@@ -78,19 +87,22 @@ void merge_sort(std::vector<int>& A) {
 	int n = A.size();
 
 	if (n > 1) {
-		for (size_t i = 0; i < ((A.size()/2) - 1) ; i++) {
+		for (size_t i = 0; i <= (floor(A.size()/2) - 1) ; i++) {
 			B.push_back(A[i]);
-			break;
+			//break;
 		}
 		
-		for (size_t i = A.size()/2 ; i < A.size(); i++) {
+		for (size_t i = ceil(A.size()/2) ; i < A.size(); i++) {
 			C.push_back(A[i]);
-			break;
+			//break;
 		}
 
 		merge_sort(B);
+		//printSequence(B);
 		merge_sort(C);
+		//printSequence(C);
 
 		merge(B, C, A);
+		//printSequence(A);
 	}
 }
