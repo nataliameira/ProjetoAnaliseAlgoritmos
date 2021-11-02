@@ -1,4 +1,4 @@
-# ProjetoAnaliseAlgoritmos
+# <center>ProjetoAnaliseAlgoritmos</center>
 
 ## Atividades da disciplina **PCC104 - Projeto e Análise de Algoritmos**
 
@@ -9,8 +9,9 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 
 <ins>Livro Didático</ins> : *Levitin, Anany. **Introduction to the design & analysis of algorithms**. 3rd ed. Pearson, 2012.*
 
-### Sumário
+## <center>Sumário</center>
 
+### Busca exaustiva, Diminuir para conquistar e Dividir para conquistar
 * ```ProjetoAnaliseAlgoritmos.cpp``` - contém a implementação principal, com a função **main** de cada algoritmo *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Utils.cpp``` - contém os utilitários da implementação principal *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```BruteForce.cpp``` - contém os algoritmos de força bruta: **Selection Sort** e **Bubble Sort** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
@@ -38,11 +39,10 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * ```MinMax.cpp``` - encontra o maior e menor valor em um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Mean.cpp``` - encontra a média dos valores em um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 
+### Programação Dinâmica
+```Fibonacci_ProgDin.cpp``` - encontra o enésimo numero da **sequencia de Fibonacci** pelo conceito de **programação dinâmica** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 
-
-
-
-### Listas de Exercícios
+## <center>Listas de Exercícios</center>
 
 * [Lista 1](https://drive.google.com/file/d/1G9e-ei6PALORpSOVVWlkb6OrwDA_s6pY/view?usp=sharing)
   * [Resolução das questões teóricas](https://drive.google.com/file/d/1G6cbCo07XPJZ5_T1b4d9Pqb4lVdSJrjk/view?usp=sharing)
