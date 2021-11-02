@@ -1,4 +1,4 @@
-# <center>ProjetoAnaliseAlgoritmos</center>
+# <p align="center">ProjetoAnaliseAlgoritmos</p>
 
 ## Atividades da disciplina **PCC104 - Projeto e Análise de Algoritmos**
 
@@ -9,7 +9,7 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 
 <ins>Livro Didático</ins> : *Levitin, Anany. **Introduction to the design & analysis of algorithms**. 3rd ed. Pearson, 2012.*
 
-## <center>Sumário</center>
+## <p align="center">Sumário</p>
 
 ### Busca exaustiva, Diminuir para conquistar e Dividir para conquistar
 * ```ProjetoAnaliseAlgoritmos.cpp``` - contém a implementação principal, com a função **main** de cada algoritmo *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
@@ -34,15 +34,15 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * ```BinarySearch.cpp``` -  implementa uma busca binária não-recursiva, algoritmo **Binary Search**, proposto no livro didático (p.151) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/BinarySearch.cpp)*.
 * ```MatrixMultiplication.cpp``` -  multiplica duas matrizes quadradas de ordem n, algoritmo **Matrix Multiplication**, proposto no livro didático (p.64), baseado em *[daher13](https://github.com/daher13/design-analysis-algorithms/blob/main/bruteForce/matrixMultiplication.cpp)*.
 * ```MergeSort.cpp``` -  classifica a matriz A [0..n - 1] por mesclagem recursiva, algoritmo **Merge Sort**, proposto no livro didático (p.172) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/MergeSort.cpp)*.
-* ```Soma.cpp``` -  soma todos os elementos de um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
-* ```MaiorMenor.cpp``` - encontra o maior e menor valor em um **vetor v** [0..n - 1] pelo método **busca exaustiva** e o menor valor pelo método **dividir para conquistar** *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
+* ```Soma.cpp``` -  soma todos os elementos de um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/Soma.cpp)*.
+* ```MaiorMenor.cpp``` - encontra o maior e menor valor em um **vetor v** [0..n - 1] pelo método **busca exaustiva** e o menor valor pelo método **dividir para conquistar** *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/MaiorMenor.cpp)*.
 * ```MinMax.cpp``` - encontra o maior e menor valor em um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Mean.cpp``` - encontra a média dos valores em um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 
 ### Programação Dinâmica
 ```Fibonacci_ProgDin.cpp``` - encontra o enésimo numero da **sequencia de Fibonacci** pelo conceito de **programação dinâmica** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 
-## <center>Listas de Exercícios</center>
+## <p align="center">Listas de Exercícios</p>
 
 * [Lista 1](https://drive.google.com/file/d/1G9e-ei6PALORpSOVVWlkb6OrwDA_s6pY/view?usp=sharing)
   * [Resolução das questões teóricas](https://drive.google.com/file/d/1G6cbCo07XPJZ5_T1b4d9Pqb4lVdSJrjk/view?usp=sharing)
