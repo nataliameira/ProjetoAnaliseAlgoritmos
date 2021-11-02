@@ -28,7 +28,7 @@ void string_match(std::vector<std::string>& texto, std::vector<std::string>& pad
 	for (size_t i = 0; i < n-m; i++) {
 		int j = 0;
 
-		while (j <m && (padrao[j] == texto[i+j])) {
+		while (j < m && (padrao[j] == texto[i+j])) {
 			j++;
 		}
 

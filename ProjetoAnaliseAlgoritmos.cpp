@@ -4,6 +4,7 @@
 #include <vector>
 #include <iostream>
 #include <list>
+#include <chrono>
 
 #include"Utils.h"
 //#include"BruteForce.h"
@@ -26,7 +27,13 @@
 //#include"ClosestPairProblem.h"
 //#include"BinarySearch.h"
 //#include"MatrixMultiplication.h"
-#include"MergeSort.h"
+//#include"MergeSort.h"
+
+//#include"Soma.h"
+//#include"MaiorMenor.h"
+
+//#include"MinMax.h"
+#include "Mean.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -362,6 +369,7 @@ int main() {
 
 //======= Merge Sort ========//
 
+/* 
 int main() {
 
 	std::vector<int> A{ {8, 3, 2, 9, 7, 1, 5, 4} };
@@ -370,4 +378,69 @@ int main() {
 
 	printSequence(A);
 }
+*/
+
+//======= Soma dos elementos do vetor ========//
+/* 
+int main(){
+
+	std::vector<int> v = { {2,4,6,8} };
+
+	//std::cout << soma_buscaexaustiva(v) << std::endl;
+
+	//std::cout << soma_divconq(v) << std::endl;
+
+	std::cout << soma_dimconq(v) << std::endl;
+
+}
+*/
+
+//======= MaiorMenor ========//
+
+/*
+int main(){
+
+	std::vector<int> v{ {8, 19, 22, -1, 25, 55, 144} };
+	//std::vector<int> v{ {22, 22, 22, 22, 22, 22} };
+
+	//minmax_buscaexaustiva(v);
+
+	std::cout << minmax_divconq(v) << std::endl;
+}
+*/
+
+
+//======= MinMax ========//
+// nao deu certo de visualizar
+/* 
+int main() {
+
+	std::vector<float> v{ {8, 19, 22, -1, 25, 55, 144} };
+
+	minmax(v);
+
+	//printSequence(mm);
+}
+*/
+
+//======= Mean ========//
+/* 
+int main(){
+	// nao deu certo de visualizar
+	std::vector<float> v = { {2,4,6,8} };
+
+	//std::cout << mean(v) << std::endl;
+
+	std::cout << dec_mean(v, 2, 8) << std::endl;
+
+	//std::cout << div_mean(v) << std::endl;
+}
+*/
+
+
+
+
+
+
+
 

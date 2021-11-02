@@ -2,7 +2,7 @@
 
 ## Atividades da disciplina **PCC104 - Projeto e Análise de Algoritmos**
 
-Este repositório contém os exercícios referentes a disciplina **PCC104 - Projeto e Análise de Algoritmos** com os códigos comentados. 
+Este repositório contém os exercícios referentes a disciplina **PCC104 - Projeto e Análise de Algoritmos** com os códigos comentados.
 
 Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)
 
@@ -33,6 +33,14 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * ```BinarySearch.cpp``` -  implementa uma busca binária não-recursiva, algoritmo **Binary Search**, proposto no livro didático (p.151) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/BinarySearch.cpp)*.
 * ```MatrixMultiplication.cpp``` -  multiplica duas matrizes quadradas de ordem n, algoritmo **Matrix Multiplication**, proposto no livro didático (p.64), baseado em *[daher13](https://github.com/daher13/design-analysis-algorithms/blob/main/bruteForce/matrixMultiplication.cpp)*.
 * ```MergeSort.cpp``` -  classifica a matriz A [0..n - 1] por mesclagem recursiva, algoritmo **Merge Sort**, proposto no livro didático (p.172) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/MergeSort.cpp)*.
+* ```Soma.cpp``` -  soma todos os elementos de um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
+* ```MaiorMenor.cpp``` - encontra o maior e menor valor em um **vetor v** [0..n - 1] pelo método **busca exaustiva** e o menor valor pelo método **dividir para conquistar** *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
+* ```MinMax.cpp``` - encontra o maior e menor valor em um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
+* ```Mean.cpp``` - encontra a média dos valores em um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
+
+
+
+
 
 ### Listas de Exercícios
 
