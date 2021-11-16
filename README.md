@@ -39,7 +39,7 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * ```MinMax.cpp``` - encontra o maior e menor valor em um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Mean.cpp``` - encontra a média dos valores em um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 
-### Programação Dinâmica
+### Programação Dinâmica e Algoritmos Gulosos
 ```Fibonacci_ProgDin.cpp``` - encontra o enésimo numero da **sequencia de Fibonacci** pelo conceito de **programação dinâmica** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 
 ## <p align="center">Listas de Exercícios</p>
@@ -49,3 +49,8 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * [Lista 2](https://drive.google.com/file/d/1GCHjtm_JzU5Ns0apVfpjZVdfihzAXEUe/view?usp=sharing)
 * [Lista 3](https://drive.google.com/file/d/1GSc31x5CzpPXlgQiYF4HQCgI_06NGSEC/view?usp=sharing)
 * [Lista 4](https://drive.google.com/file/d/1GTMk_fHHx8ubH5w6_qXCqpP7lUhRvaVh/view?usp=sharing)
+* [Lista 5](https://drive.google.com/file/d/1MWlxXeo8yIRf6XQqaccfb9_3Ry_tqUPP/view?usp=sharing)
+  * [Resolução das questões teóricas](https://drive.google.com/file/d/1P8PnB1Ik_wwiMNdQjuFrtBPoy6RYnzbJ/view?usp=sharing)
+* [Lista 6](https://drive.google.com/file/d/1Mq9trd0SvQWttyaisgKV3XPpdEE2Xm_O/view?usp=sharing)
+  
+
