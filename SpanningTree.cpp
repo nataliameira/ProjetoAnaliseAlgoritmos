@@ -4,9 +4,22 @@
 #include <cfloat>
 #include "SpanningTree.h"
 
+/*
+Algoritmo de Prim para a construção de uma minimums spanning tree
+	
+	Input: um grafo conectado G={V,E}
+	Output: Et, o conjunto de arestas que compõem uma minimum spanning tree
+*/
+
+
+
+
+/* ========= Algoritmo de Prim: Minimum Spanning Tree =========*/
+
 std::vector<std::vector<float>> prim(std::vector<std::vector<float>> graph) {
-	/* Computes a minimum spanning tree using Prim's algorithm
-	*/
+	
+
+	// escolher um nó e adicionar na arvore
 
 	std::vector<std::vector<float>> tree(graph.size(), std::vector<float>(graph.size(), 0.0));
 	std::list<int> tree_nodes({ 0 });
@@ -16,8 +29,12 @@ std::vector<std::vector<float>> prim(std::vector<std::vector<float>> graph) {
 	{
 		nodes.push_back(i);
 	}
+	// enquanto a arvore nao contiver todos os nós
+	
 
-	for (size_t t = 0; t < tree.size() - 1; t++)
+			// para cada nó, u, da arvore, encontrar a aresta de menor custo a=(u,v)
+			 // de forma que u esta na arvore e v nao esta na arvore.
+	for (size_t t = 0; t < tree.size() - 1; t++) // quem vai add na arvore (nó de menor custo)
 	{
 
 		float min_w = FLT_MAX;
@@ -63,17 +80,19 @@ int min_node(std::vector<float>& vals, std::vector<bool>& nodes) {
 	return  min_idx;
 }
 
-
+/* ========= Algoritmo de Prim: Minimum Spanning Tree =========*/
+// O(n^2)
+/* 
 std::vector<std::vector<float>> prim2(std::vector<std::vector<float>> graph) {
 	/* Computes a minimum spanning tree using Prim's algorithm
 	*/
-
+/* 
 	std::vector<std::vector<float>> tree(graph.size(), std::vector<float>(graph.size(), 0.0));
 	std::vector<bool> tree_nodes(graph.size(), false);
 	std::vector<float> vals(graph.size(), FLT_MAX);
 	std::vector<int> parents(graph.size(), -1);
 
-	vals[0] = 0;
+	vals[0] = 0; //define fila de prioridade
 
 
 	for (int t = 0; t < tree.size() - 1; t++)
@@ -101,3 +120,42 @@ std::vector<std::vector<float>> prim2(std::vector<std::vector<float>> graph) {
 	return tree;
 
 }
+*/
+
+/* ========= Algoritmo de Prim: Minimum Spanning Tree =========*/
+// O(n log n)
+// estrutura heap p/ organizar fila de prioridade
+/* 
+std::vector<Edge> primElogE(std::vector<std::vector<Node>> graph) {
+
+	std::vector<bool> included(graph.size(), false);
+	std::priority_queue<Edge, std::vector<Edge>, GreaterEdge> edges({});
+	std::vector<Edge> tree;
+
+	edges.push(Edge(-1, 0, 0));
+
+	while (!edges.empty()) {
+
+		Edge selected = edges.top();
+		edges.pop();
+
+		if (!included[selected.to]) {
+			tree.push_back(selected);
+			included[selected.to] = true;
+
+			for (Node n : graph[selected.to]) {
+				if (!included[n.id]) {
+					edges.push(Edge(selected.to, n.id, n.val)); //log E
+				}
+			}
+		}
+
+	}
+
+	// E log E
+
+
+	return tree;
+
+}
+*/

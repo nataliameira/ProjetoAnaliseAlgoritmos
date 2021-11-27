@@ -34,8 +34,11 @@
 
 //#include"MinMax.h"
 //#include "Mean.h"
-#include "Fibonacci_ProgDin.h"
-//#include "SpanningTree.h"
+//#include "Fibonacci_ProgDin.h"
+#include "SpanningTree.h"
+//#include "CoinRow.h"
+//#include "Knapsack.h"
+//#include "Backtracking.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -440,7 +443,7 @@ int main(){
 */
 
 //======= Fibonacci - Programação Dinâmica ========//
-
+/* 
 int main(){
 
 	//std::cout << fibonacci(6) << std::endl;
@@ -473,23 +476,37 @@ int main(){
 	std::cout << "fibonacci_bu : " << seconds_as_double.count() << " seconds" << std::endl;
 	
 }
-
+*/
 
 //=============== Spanning Tree ============//
 
-/* 
+
 int main()
 {
-
+	/* 
 	std::vector<std::vector<float>> graph({ {0,3,0,0,6,5},
 											{3,0,1,0,0,4},
 											{0,1,0,6,0,4},
 											{0,0,6,0,8,5},
 											{6,0,0,8,0,2},
 											{5,4,4,5,2,0} });
+	*/
 
+
+	std::vector<std::vector<float>> graph({ {0,4,9,5 },
+											{4,0,7,6},
+											{9,7,0,8},
+											{5,6,8,0}, 
+	});
+	
 	printSequenceSequence(graph);
 
+	std::vector<std::vector<float>> spanning_tree = prim(graph);
+	std::cout << "Minimal Spanning Tree" << std::endl;
+
+	printSequenceSequence(spanning_tree);
+
+	/* 
 	auto start = std::chrono::system_clock::now();
 	std::vector<std::vector<float>> spanning_tree = prim2(graph);
 	auto end = std::chrono::system_clock::now();
@@ -503,15 +520,58 @@ int main()
 	std::cout << "Minimal Spanning Tree" << std::endl;
 
 	printSequenceSequence(spanning_tree);
+	*/
+	
 
-	spanning_tree = prim(graph);
-	std::cout << "Minimal Spanning Tree" << std::endl;
+	
+}
 
-	printSequenceSequence(spanning_tree);
 
+//=============== Coin Row ============//
+/* 
+int main()
+{
+	std::vector<float> coins({ 0,5,1,2,10,6,2 });
+	std::cout << coin_row_dynamic(coins) << std::endl;
+
+	std::cout << coin_row_recursive(coins) << std::endl;
 
 }
 */
 
 
+//=============== Backtracking ============//
+/* 
+int main()
+{
+	std::vector<std::vector<int>> sudoku(
+		{ {0, 0, 0, 0, 4, 0, 0, 0, 0},
+		{0, 0, 0, 9, 0, 8, 0, 0, 0},
+		{9, 0, 8, 0, 0, 0, 4, 0, 1},
+		{0, 5, 9, 0, 1, 0, 3, 7, 0},
+		{0, 0, 0, 7, 0, 9, 0, 0, 0},
+		{0, 2, 7, 0, 5, 0, 6, 9, 0},
+		{8, 0, 4, 0, 0, 0, 2, 0, 6},
+		{0, 0, 0, 5, 0, 3, 0, 0, 0},
+		{0, 0, 0, 0, 2, 0, 0, 0, 0} }
+	);
 
+	/*std::vector<std::vector<int>> sudoku(
+		{ {0, 0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0, 0},
+		{9, 0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0, 0},
+		{0, 0, 0, 0, 0, 0, 0, 0, 0} }
+	);
+
+
+	solve_sudoku(sudoku);
+
+	//solve_nqueen(4);
+
+}
+*/

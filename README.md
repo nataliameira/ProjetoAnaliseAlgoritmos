@@ -40,7 +40,13 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * ```Mean.cpp``` - encontra a média dos valores em um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 
 ### Programação Dinâmica e Algoritmos Gulosos
-```Fibonacci_ProgDin.cpp``` - encontra o enésimo numero da **sequencia de Fibonacci** pelo conceito de **programação dinâmica** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
+* ```Fibonacci_ProgDin.cpp``` - encontra o enésimo numero da **sequencia de Fibonacci** pelo conceito de **programação dinâmica** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
+* ```SpanningTree.cpp``` - resolve o **algoritmo de Prim** pelo conceito de **algoritmo  guloso** e **spanning tree problem**, proposto no livro didático (p.318) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
+* ```Elements.cpp``` - completa o **algoritmo de Prim**.
+* ```CoinRow.cpp``` - coleta a quantidade máxima de dinheiro dada uma fila de moedas seguindo as restrições do algoritmo **Coin-row problem**, pelo conceito de **programação dinâmica**, proposto no livro didático (p.285) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
+* ```Knapsack.cpp``` - resolve o **problema da mochila** pelo conceito de **programação dinâmica**, proposto no livro didático (p.295) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
+* ```Backtracking.cpp``` - implementa os problemas **n-queens problem** e **sudoku** itmos, pelo conceito de **backtracking**, proposto no livro didático (p.423) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
+
 
 ## <p align="center">Listas de Exercícios</p>
 
@@ -52,5 +58,7 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * [Lista 5](https://drive.google.com/file/d/1MWlxXeo8yIRf6XQqaccfb9_3Ry_tqUPP/view?usp=sharing)
   * [Resolução das questões teóricas](https://drive.google.com/file/d/1P8PnB1Ik_wwiMNdQjuFrtBPoy6RYnzbJ/view?usp=sharing)
 * [Lista 6](https://drive.google.com/file/d/1Mq9trd0SvQWttyaisgKV3XPpdEE2Xm_O/view?usp=sharing)
+  * [Resolução das questões teóricas](https://drive.google.com/file/d/1Qc5rFuAvAq5fwUCIUGr16PDnRfwd2yhx/view?usp=sharing)
+* [Lista 7](https://drive.google.com/file/d/1QZ4FYWSDjMLXR2pZuLiEN00bbezvh5MR/view?usp=sharing)
   
 
