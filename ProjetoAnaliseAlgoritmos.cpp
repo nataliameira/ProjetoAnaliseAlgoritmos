@@ -35,10 +35,12 @@
 //#include"MinMax.h"
 //#include "Mean.h"
 //#include "Fibonacci_ProgDin.h"
-#include "SpanningTree.h"
+//#include<Elements.h>
+//#include "SpanningTree.h"
 //#include "CoinRow.h"
 //#include "Knapsack.h"
 //#include "Backtracking.h"
+//#include "BranchAndBound.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -481,22 +483,29 @@ int main(){
 //=============== Spanning Tree ============//
 
 
-int main()
-{
+int main(){
+
 	/* 
+	
 	std::vector<std::vector<float>> graph({ {0,3,0,0,6,5},
 											{3,0,1,0,0,4},
 											{0,1,0,6,0,4},
 											{0,0,6,0,8,5},
 											{6,0,0,8,0,2},
 											{5,4,4,5,2,0} });
-	*/
+	
 
 
 	std::vector<std::vector<float>> graph({ {0,4,9,5 },
 											{4,0,7,6},
 											{9,7,0,8},
 											{5,6,8,0}, 
+	})
+
+	std::vector<std::vector<float>> graph({ {0,4,9,5 },
+											{4,0,7,6},
+											{9,7,0,8},
+											{5,6,8,0},
 	});
 	
 	printSequenceSequence(graph);
@@ -506,7 +515,7 @@ int main()
 
 	printSequenceSequence(spanning_tree);
 
-	/* 
+	
 	auto start = std::chrono::system_clock::now();
 	std::vector<std::vector<float>> spanning_tree = prim2(graph);
 	auto end = std::chrono::system_clock::now();
@@ -520,12 +529,9 @@ int main()
 	std::cout << "Minimal Spanning Tree" << std::endl;
 
 	printSequenceSequence(spanning_tree);
-	*/
-	
 
-	
 }
-
+*/
 
 //=============== Coin Row ============//
 /* 
@@ -573,5 +579,22 @@ int main()
 
 	//solve_nqueen(4);
 
+}
+*/
+
+//=============== Branch And Bound ============//
+/* 
+int main(){
+
+	std::vector<std::vector<int>> graph(
+		{ {0, 3, 1, 5, 8},
+		{3, 0, 6, 7, 9},
+		{1, 6, 0, 4, 2},
+		{5, 7, 4, 0, 3},
+		{8, 9, 2, 3, 0},
+		}
+	);
+
+	solve_tsp(graph);
 }
 */

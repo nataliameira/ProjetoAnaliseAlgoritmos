@@ -1,13 +1,13 @@
 #pragma once
 
-class Node {
+class Node {		//permite criar estrutura com tipos diferentes, pois vector nao permite
 public:
-	int id;
-	float val;
-	Node(int i, float v);
+	int id; //armazenar nome do nó
+	float val; // armazenar valor
+	Node(int i, float v); //construtor
 };
 
-class Edge {
+class Edge { // armazenar
 public:
 	int from;
 	int to;
@@ -17,5 +17,5 @@ public:
 
 class GreaterEdge {
 public:
-	bool operator()(Edge e1, Edge e2);
+	bool operator()(Edge e1, Edge e2); // min_heap
 };

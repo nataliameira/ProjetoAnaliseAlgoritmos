@@ -1,12 +1,12 @@
 #include <ostream>
 #include "Elements.h"
 
-Node::Node(int i, float v) {
+Node::Node(int i, float v) { //Estrutura para representar os nós do grafo
 	id = i;
 	val = v;
 }
 
-Edge::Edge(int f, int t, float v) {
+Edge::Edge(int f, int t, float v) { //Representa para representar arestas, precisa de dois nós e valores
 	from = f;
 	to = t;
 	val = v;
