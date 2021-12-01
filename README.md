@@ -46,6 +46,7 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * ```CoinRow.cpp``` - coleta a quantidade máxima de dinheiro dada uma fila de moedas seguindo as restrições do algoritmo **Coin-row problem**, pelo conceito de **programação dinâmica**, proposto no livro didático (p.285) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Knapsack.cpp``` - resolve o **problema da mochila** pelo conceito de **programação dinâmica**, proposto no livro didático (p.295) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Backtracking.cpp``` - implementa os problemas **n-queens problem** e **sudoku**, pelo conceito de **backtracking**, proposto no livro didático (p.423) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
+* ```BranchAndBound.cpp``` - implementa o problema do **Caixeiro Viajante**, pelo conceito de **branch and bouond** , proposto no livro didático (p.423) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 
 
 ## <p align="center">Listas de Exercícios</p>
