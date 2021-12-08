@@ -47,7 +47,7 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * ```Knapsack.cpp``` - resolve o **problema da mochila** pelo conceito de **programação dinâmica**, proposto no livro didático (p.295) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Backtracking.cpp``` - implementa os problemas **n-queens problem** e **sudoku**, pelo conceito de **backtracking**, proposto no livro didático (p.423) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```BranchAndBound.cpp``` - implementa o problema do **Caixeiro Viajante**, pelo conceito de **branch and bouond** , proposto no livro didático (p.423) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
-
+* ```HamiltonianCircuit.cpp``` - implementa o problema **Hamiltonian Circuit Problem**, pelo conceito de **backtracking**, proposto no livro didático (p.454) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
 
 ## <p align="center">Listas de Exercícios</p>
 

@@ -41,6 +41,7 @@
 //#include "Knapsack.h"
 //#include "Backtracking.h"
 //#include "BranchAndBound.h"
+#include"HamiltonianCircuit.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -80,7 +81,6 @@ int main() {
 }
 */
 
-
 //=====================  GraphSearch  ====================//
 
 /* 
@@ -109,11 +109,9 @@ int main() {
 }
 */
 
-
 //======= PermSetGen - gerador de permutações   ========//
 
-
-//int main() {
+/* int main() {
 
 	//permgen(4);				// permutações
 
@@ -125,8 +123,7 @@ int main() {
 
 	//printSequenceSequence(sets);
 	
-//}
-
+}*/
 
 
 //======= Topological Sorting  ========//
@@ -268,10 +265,10 @@ int main() {
 }
 */
 
-/*
+
 //======= Simulado - Binary Search Tree  ========//
 
-
+/* 
 int main() {
 
 	BinarySearchTree<int> bt;
@@ -481,12 +478,10 @@ int main(){
 */
 
 //=============== Spanning Tree ============//
-
-
+/*
 int main(){
 
-	/* 
-	
+
 	std::vector<std::vector<float>> graph({ {0,3,0,0,6,5},
 											{3,0,1,0,0,4},
 											{0,1,0,6,0,4},
@@ -547,10 +542,11 @@ int main()
 
 
 //=============== Backtracking ============//
-/* 
-int main()
-{
-	std::vector<std::vector<int>> sudoku(
+
+//int main(){
+
+	 
+	/* std::vector<std::vector<int>> sudoku(
 		{ {0, 0, 0, 0, 4, 0, 0, 0, 0},
 		{0, 0, 0, 9, 0, 8, 0, 0, 0},
 		{9, 0, 8, 0, 0, 0, 4, 0, 1},
@@ -560,7 +556,8 @@ int main()
 		{8, 0, 4, 0, 0, 0, 2, 0, 6},
 		{0, 0, 0, 5, 0, 3, 0, 0, 0},
 		{0, 0, 0, 0, 2, 0, 0, 0, 0} }
-	);
+	);*/
+	
 
 	/*std::vector<std::vector<int>> sudoku(
 		{ {0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -573,20 +570,20 @@ int main()
 		{0, 0, 0, 0, 0, 0, 0, 0, 0},
 		{0, 0, 0, 0, 0, 0, 0, 0, 0} }
 	);
+	*/
 
-
-	solve_sudoku(sudoku);
+	//solve_sudoku(sudoku);
 
 	//solve_nqueen(4);
 
-}
-*/
+//}
+
 
 //=============== Branch And Bound ============//
 /* 
 int main(){
 
-	std::vector<std::vector<int>> graph(
+	std::vector<std::vector<int>> graph(	// grafo matriz de adjacências
 		{ {0, 3, 1, 5, 8},
 		{3, 0, 6, 7, 9},
 		{1, 6, 0, 4, 2},
@@ -598,3 +595,39 @@ int main(){
 	solve_tsp(graph);
 }
 */
+
+//=============== Change Making ============//
+/* 
+int main(){
+
+	std::vector<int> coins({ 1,3,4 });
+
+	std::cout << get_coins(11, coins) << std::endl;
+
+}
+
+*/
+
+//=============== Hamiltonian Circuit ============//
+
+int main() {
+	
+	std::vector<std::vector<int>> graph(	
+		{ {0, 1, 1, 0, 1},
+		{1, 0, 1, 1, 1},
+		{1, 1, 0, 1, 0},
+		{0, 1, 1, 0, 1},
+		{1, 1, 0, 1, 0},
+		}
+	);
+
+	hamiltonian_circuit(graph);
+}
+
+
+
+
+
+
+
+
