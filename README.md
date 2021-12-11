@@ -39,7 +39,7 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * ```MinMax.cpp``` - encontra o maior e menor valor em um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Mean.cpp``` - encontra a média dos valores em um **vetor v** [0..n - 1] pelos métodos **busca exaustiva, diminuir para conquistar e dividir para conquistar** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 
-### Programação Dinâmica e Algoritmos Gulosos
+### Programação Dinâmica, Algoritmos Gulosos, Backtracking e Branch and Bound
 * ```Fibonacci_ProgDin.cpp``` - encontra o enésimo numero da **sequencia de Fibonacci** pelo conceito de **programação dinâmica** *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```SpanningTree.cpp``` - resolve o **algoritmo de Prim** pelo conceito de **algoritmo  guloso** e **spanning tree problem**, proposto no livro didático (p.318) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Elements.cpp``` - completa o **algoritmo de Prim**.
