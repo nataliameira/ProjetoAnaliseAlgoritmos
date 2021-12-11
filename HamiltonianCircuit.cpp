@@ -30,11 +30,14 @@ bool is_possible_hamiltonian(std::vector<std::vector<int>>& graph, std::vector<i
 		return false;
 	}
 
-	for (int k = 0; k < path.size(); k++) {
-
-		if (j == path[k]) { // a posição (nó) não pode se repetir
-			return false;
+	if (path.size() != graph.size() + 1) {		// se o path ainda não estiver preenchido
+		for (int k = 0; k < path.size(); k++) {		// os elementos do path não podem se repetir
+		
+			if (j == path[k]) { // a posição (nó) não pode se repetir
+				return false;
+			}
 		}
+		return false;
 	}
 
 	return true;
@@ -43,9 +46,11 @@ bool is_possible_hamiltonian(std::vector<std::vector<int>>& graph, std::vector<i
 // resolver o path 
 bool solve_hamiltonian_circuit(std::vector<std::vector<int>>& graph, std::vector<int>& path) { 
 
-	if (path.size() == graph.size() ) {			
-		printSequence(path);			// imprimir a solução
-		return true;
+	if (path.size()  == graph.size() + 1 ) {	// verifica o tamanho do path, que é o graph + 1, pois precisar voltar para o primeiro nó
+		if (path.front() == path.back()) {		// verifica se a primeira posição é igual a ultima
+			printSequence(path);			// imprimir a solução
+			return true;
+		}
 	}
 
 	else {
