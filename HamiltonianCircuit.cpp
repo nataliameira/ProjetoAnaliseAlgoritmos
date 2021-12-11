@@ -23,23 +23,23 @@
 		- Fixar o nó inicial para não obter caminhos duplicados.
 */
 
+
 // verificar se é possível add um vértice
 bool is_possible_hamiltonian(std::vector<std::vector<int>>& graph, std::vector<int>& path, int& i, int& j) { // path é o caminho 
-	
-	if (graph[i][j] == 0) { // verifica se o elemento naquela posição é zero, então não existe aresta
-		return false;
-	}
 
 	if (path.size() != graph.size() + 1) {		// se o path ainda não estiver preenchido
+		
+		if (graph[i][j] == 0) { // verifica se o elemento naquela posição é zero, então não existe aresta
+			return false;
+		}
+
 		for (int k = 0; k < path.size(); k++) {		// os elementos do path não podem se repetir
 		
 			if (j == path[k]) { // a posição (nó) não pode se repetir
 				return false;
 			}
 		}
-		return false;
 	}
-
 	return true;
 }
 
@@ -64,7 +64,6 @@ bool solve_hamiltonian_circuit(std::vector<std::vector<int>>& graph, std::vector
 					}
 				}
 			}
-
 			return false;
 	}
 }
@@ -78,7 +77,6 @@ bool hamiltonian_circuit(std::vector<std::vector<int>>& graph) {
 	std::vector<int> path({n}); // o caminho é um vetor do tamanho no nº de nós do grafo, mas começa apenas com o elemento 0 na posição (0)
 
 	return solve_hamiltonian_circuit(graph, path); 
-
 }
 
 
