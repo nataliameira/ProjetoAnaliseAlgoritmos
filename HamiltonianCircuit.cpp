@@ -24,57 +24,53 @@
 */
 
 // verificar se é possível add um vértice
-bool is_possible_hamiltonian(std::vector<std::vector<int>>& graph, std::vector<int>& path) { // path é o caminho 
+bool is_possible_hamiltonian(std::vector<std::vector<int>>& graph, std::vector<int>& path, int& i, int& j) { // path é o caminho 
+	
+	if (graph[i][j] == 0) { // verifica se o elemento naquela posição é zero, então não existe aresta
+		return false;
+	}
 
-	for (int i = 0; i < graph.size(); i++) {
-		for (int j = 0; j < graph.size(); j++) {
+	for (int k = 0; k < path.size(); k++) {
 
-			for (int k = 0; k < path.size(); k++) {
-
-				if (i == k || j == k) { // a posição (nó) não pode se repetir
-					return false;
-				}
-
-				if (graph[i][j] == 0) { // qdo for zero, não tem aresta
-					return false;
-				}
-			}
+		if (j == path[k]) { // a posição (nó) não pode se repetir
+			return false;
 		}
 	}
 
 	return true;
 }
 
-
 // resolver o path 
 bool solve_hamiltonian_circuit(std::vector<std::vector<int>>& graph, std::vector<int>& path) { 
 
-	if (path.back() != -1 ) {			// qdo o ultimo elemento for diferente de -1, preencheu todo o path
+	if (path.size() == graph.size() ) {			
 		printSequence(path);			// imprimir a solução
 		return true;
 	}
 
 	else {
-		for (int i = 0; i < graph.size(); i++) {
-			for (int j = 0; j < graph.size(); j++) {
+			for (int i = 0; i < graph.size(); i++) {
+				for (int j = 0; j < graph.size(); j++) {
 
-				if (is_possible_hamiltonian(graph, path)) { // verifica se é uma posição que contem aresta
-					path.push_back(i);						// add a posição ao caminho
-					solve_hamiltonian_circuit(graph, path); // tenta resolver
-					path.pop_back();						// apaga ultima posição e tenta resolver
+					if (is_possible_hamiltonian(graph, path, i, j)) { // verifica se é uma posição que contem aresta
+								path.push_back(j);						// add a posição ao caminho
+								solve_hamiltonian_circuit(graph, path); // tenta resolver
+								path.pop_back();						// apaga ultima posição e tenta resolver
+					}
 				}
 			}
-		}
-		return false;
-	}
 
+			return false;
+	}
 }
 
-// solve para o úsuário
+// solve para o usuário
 
 bool hamiltonian_circuit(std::vector<std::vector<int>>& graph) {
 
-	std::vector<int> path(graph.size(), -1); // o caminho é um vetor do tamanho no nº de nós do grafo, preenchido com -1
+	int n = 0;
+
+	std::vector<int> path({n}); // o caminho é um vetor do tamanho no nº de nós do grafo, mas começa apenas com o elemento 0 na posição (0)
 
 	return solve_hamiltonian_circuit(graph, path); 
 
