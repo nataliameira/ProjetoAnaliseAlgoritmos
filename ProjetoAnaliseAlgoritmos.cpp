@@ -42,8 +42,8 @@
 //#include "Knapsack.h"
 //#include "Backtracking.h"
 //#include "BranchAndBound.h"
-#include"HamiltonianCircuit.h"
-//#include"SubsetSum.cpp"
+//#include"HamiltonianCircuit.h"
+#include"SubsetSum.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -612,7 +612,7 @@ int main(){
 
 //=============== Hamiltonian Circuit ============//
 
-
+/* 
 int main() {
 	
 	std::vector<std::vector<int>> graph({ 
@@ -626,11 +626,12 @@ int main() {
 
 	hamiltonian_circuit(graph);
 }
+*/
 
 
 // ===================== Subset-Sum Problem ==============//
 
-/* 
+
 int main() {
 
 	std::vector<int> set = { 3, 5, 6, 7 };
@@ -639,7 +640,7 @@ int main() {
 
 	subset(set, d);
 }
-*/
+
 
 
 
