@@ -44,10 +44,12 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * ```SpanningTree.cpp``` - resolve o **algoritmo de Prim** pelo conceito de **algoritmo  guloso** e **spanning tree problem**, proposto no livro didático (p.318) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Elements.cpp``` - completa o **algoritmo de Prim**.
 * ```CoinRow.cpp``` - coleta a quantidade máxima de dinheiro dada uma fila de moedas seguindo as restrições do algoritmo **Coin-row problem**, pelo conceito de **programação dinâmica**, proposto no livro didático (p.285) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
+* ```ChangeMaking.cpp``` - fornece o troco para o valor **n** usando um número mínimo de moedas de denominações *d1<d2<...<dm* ,  do algoritmo **Change Making Problem**, pelo conceito de **programação dinâmica**, proposto no livro didático (p.287) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Knapsack.cpp``` - resolve o **problema da mochila** pelo conceito de **programação dinâmica**, proposto no livro didático (p.295) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```Backtracking.cpp``` - implementa os problemas **n-queens problem** e **sudoku**, pelo conceito de **backtracking**, proposto no livro didático (p.423) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```BranchAndBound.cpp``` - implementa o problema do **Caixeiro Viajante**, pelo conceito de **branch and bouond** , proposto no livro didático (p.423) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
-* ```HamiltonianCircuit.cpp``` - implementa o problema **Hamiltonian Circuit Problem**, pelo conceito de **backtracking**, proposto no livro didático (p.454) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
+* ```HamiltonianCircuit.cpp``` - implementa o problema **Hamiltonian Circuit Problem**, pelo conceito de **backtracking**, proposto no livro didático (p.454) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/HamiltonianCircuit.cpp)*.
+* ```SubsetSum.cpp``` - Encontra os subconjuntos de um determinado conjunto *A = {a1,. . . , an}* de *n* inteiros positivos cuja soma é igual a um determinado inteiro positivo *d*, pelo conceito de **backtracking** , baseado no proposto no livro didático (p.427) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/SubsetSum.cpp)*.
 
 ## <p align="center">Listas de Exercícios</p>
 

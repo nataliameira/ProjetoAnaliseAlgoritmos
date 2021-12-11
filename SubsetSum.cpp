@@ -7,7 +7,7 @@
 
 /*
 	Subset-Sum Problem
-	Encontra um subconjunto de um determinado conjunto A = {a1,. . . , an} de n inteiros positivos
+	Encontra os subconjuntos de um determinado conjunto A = {a1,. . . , an} de n inteiros positivos
 		cuja soma é igual a um determinado inteiro positivo d.
 
 	Input: um array A = {a1,. . . , an} de n inteiros positivos e um inteiro positivo d.
@@ -18,10 +18,8 @@
 // verificar se a adição de um nó chega na solução
 
 bool node_sum(std::vector<int>& set, std::vector<int>& subset, int& d, int& i, int& right_node, int& left_node) { //fç que guarda os nós com a soma
-
-	right_node += set[i];
 		
-	if (right_node > d || left_node > d) {
+	if (right_node > d || left_node > d) {	// verifica se o valor do nó é maior que a soma
 		return false;
 	}
 
@@ -30,8 +28,6 @@ bool node_sum(std::vector<int>& set, std::vector<int>& subset, int& d, int& i, i
 
 bool subset_sum(std::vector<int>& set, std::vector<int>& subset, int& d, int& right_node, int& left_node) {
 
-	int sum = 0;
-
 	if (right_node == d || left_node == d){
 		printSequence(subset);
 		return true;
@@ -39,11 +35,16 @@ bool subset_sum(std::vector<int>& set, std::vector<int>& subset, int& d, int& ri
 
 	else {
 		for (int i = 0; i < set.size(); i++) {
-			node_sum(set, subset, d, i, right_node, left_node);
-			left_node = right_node;
-			subset.push_back(set[i]);
-			subset_sum(set, subset, d, right_node, left_node);
-			subset.pop_back();
+
+			if (node_sum(set, subset, d, i, right_node, left_node)) {
+				right_node = left_node;
+				left_node += set[i];
+
+				subset.push_back(set[i]);
+				subset_sum(set, subset, d, right_node, left_node);
+				subset.pop_back();
+				left_node = left_node - set[i];
+			}
 		}
 
 		return false;
