@@ -49,7 +49,9 @@ Acesse o repositório do professor [aqui](https://github.com/rcpsilva/DesignAndA
 * ```Backtracking.cpp``` - implementa os problemas **n-queens problem** e **sudoku**, pelo conceito de **backtracking**, proposto no livro didático (p.423) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```BranchAndBound.cpp``` - implementa o problema do **Caixeiro Viajante**, pelo conceito de **branch and bouond** , proposto no livro didático (p.423) *[professor](https://github.com/rcpsilva/DesignAndAnalysisofAlgorithms)*.
 * ```HamiltonianCircuit.cpp``` - implementa o problema **Hamiltonian Circuit Problem**, pelo conceito de **backtracking**, proposto no livro didático (p.454) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/HamiltonianCircuit.cpp)*.
-* ```SubsetSum.cpp``` - Encontra os subconjuntos de um determinado conjunto *A = {a1,. . . , an}* de *n* inteiros positivos cuja soma é igual a um determinado inteiro positivo *d*, pelo conceito de **backtracking** , baseado no proposto no livro didático (p.427) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/SubsetSum.cpp)*.
+* ```SubsetSum.cpp``` - encontra os subconjuntos de um determinado conjunto *A = {a1,. . . , an}* de *n* inteiros positivos cuja soma é igual a um determinado inteiro positivo *d*, pelo conceito de **backtracking** , baseado no proposto no livro didático (p.427) *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos/blob/main/SubsetSum.cpp)*.
+* ```N_Torres.cpp``` - resolve o problemas das **n torres** , pelo conceito de **backtracking** *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
+* ```Constraint_Satisfaction.cpp``` - dado um conjunto domínio, encontra os **subconjuntos de variáveis** que satisfazem um conjuntp de restrições, pelo conceito de **backtracking** *[nataliameira](https://github.com/nataliameira/ProjetoAnaliseAlgoritmos)*.
 
 ## <p align="center">Listas de Exercícios</p>
 

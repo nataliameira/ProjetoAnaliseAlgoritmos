@@ -35,15 +35,19 @@
 //#include"MinMax.h"
 //#include "Mean.h"
 //#include "Fibonacci_ProgDin.h"
-//#include<Elements.h>
+//#include"Elements.h"
 //#include "SpanningTree.h"
 //#include "CoinRow.h"
-// #include "ChangeMaking.h"
+//#include "ChangeMaking.h"
 //#include "Knapsack.h"
 //#include "Backtracking.h"
 //#include "BranchAndBound.h"
 //#include"HamiltonianCircuit.h"
-#include"SubsetSum.h"
+//#include"SubsetSum.h"
+//#include"Knapsack_BB.h"
+
+//#include"Teste.cpp"
+#include"P2.h"
 
 //===================== Brute Force  - Selection Sort  =================//
 
@@ -530,6 +534,21 @@ int main(){
 }
 */
 
+
+//=============== Knapsack - Prog Dinâmica ============//
+/* 
+int main() {
+
+	std::vector<int> weights({ 2,1,3,2 });
+	std::vector<int> values({ 12,10,20,15 });
+	int capacity = 5;
+
+	std::cout << mf_knapsack(values, weights, capacity) << std::endl;
+}
+*/
+
+
+
 //=============== Coin Row ============//
 /* 
 int main()
@@ -582,7 +601,7 @@ int main()
 
 
 //=============== Branch And Bound ============//
-/* 
+ /* 
 int main(){
 
 	std::vector<std::vector<int>> graph(	// grafo matriz de adjacências
@@ -604,7 +623,11 @@ int main(){
 
 	std::vector<int> coins({ 1,3,4 });
 
-	std::cout << get_coins(11, coins) << std::endl;
+	int val = 11;
+
+	std::cout << get_coins_recursive(val, coins) << std::endl;
+
+	std::cout << get_coins(val, coins) << std::endl;
 
 }
 
@@ -628,10 +651,9 @@ int main() {
 }
 */
 
-
 // ===================== Subset-Sum Problem ==============//
 
-
+ /* 
 int main() {
 
 	std::vector<int> set = { 3, 5, 6, 7 };
@@ -640,11 +662,34 @@ int main() {
 
 	subset(set, d);
 }
+*/
 
+//=============== Knapsack - Branch and Bound ============//
+/* 
+int main() {
 
+	std::vector<int> weights({7,4,5,3});
+	std::vector<int> values({42,40,25,12});
+	int W = 10;
 
+	knapsack_bb(values, weights, W);
+}
 
+*/
 
+//=============== Problema de Satisfação de Restrições ============//
+
+int main() {
+
+	std::vector<std::vector<int>> dom({
+		{1,2},
+		{1,2,3,4},
+		{1,3,4},
+		{3,4,7},
+	});
+
+	variavel(dom);
+}
 
 
 

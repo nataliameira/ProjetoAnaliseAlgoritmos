@@ -31,7 +31,7 @@ int heuristic(std::vector<int>& tour, int min_edge, int n_cities) { // verificar
 // método que testa
 bool is_possible_tsp(std::vector<int>& tour, int city) { 
 
-	for (size_t i = 0; i < tour.size(); i++){
+	for (size_t i = 0; i < tour.size(); i++){ 
 
 		if (tour[i] == city) {
 			return false;
@@ -43,7 +43,7 @@ bool is_possible_tsp(std::vector<int>& tour, int city) {
 
 // método que armazena
 void solve_tsp(std::vector<int>& tour, std::vector<std::vector<int>>& graph, int min_edge, int& bound,
-	std::vector<int>& best_tour, int best_cost) {
+	std::vector<int>& best_tour, int& best_cost){
 			// min_edge = menor aresta que calcula a heuristica
 			// bound = limite para descidir se expande um caminho
 			//best_tour = armazena melhor rota
@@ -85,25 +85,25 @@ void solve_tsp(std::vector<int>& tour, std::vector<std::vector<int>>& graph, int
 
 void solve_tsp(std::vector<std::vector<int>>& graph) { // método que o usuário passa o grafo
 
-	int minedge = std::numeric_limits<int>::max();
+	int min_edge = std::numeric_limits<int>::max();
 
 	for (size_t i = 0; i < graph.size(); i++){
 
 		for (size_t j = 0; j < graph.size(); j++){
 
-			minedge = (graph[i][j] < minedge) ? graph[i][j] : minedge;
+			min_edge = (graph[i][j] < min_edge) ? graph[i][j] : min_edge;
 		}
 	}
 
-	std::vector<int> tour({ 0 });
+	std::vector<int> tour({ 0 });		// sempre começa da cidade 0
 	std::vector<int> best_tour({ 0 });
 	int best_cost = std::numeric_limits<int>::max();
 	int bound = 15; // std::numeric_limits<int>::max();
 
 
-	solve_tsp(tour, graph, minedge, bound, best_tour, best_cost);
+	solve_tsp(tour, graph, min_edge, bound, best_tour, best_cost);
 
-	std::cout << "BEST Tour: " << std::endl;
+	std::cout << "BEST TOUR: " << std::endl;
 	printSequence(best_tour);
 	std::cout << "cost: " << cost(graph, best_tour) << std::endl;
 	std::cout << "==================== " << std::endl;

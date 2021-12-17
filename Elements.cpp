@@ -1,6 +1,7 @@
 #include <ostream>
 #include "Elements.h"
 
+=
 Node::Node(int i, float v) { //Estrutura para representar os nós do grafo
 	id = i;
 	val = v;
